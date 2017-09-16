@@ -4,16 +4,72 @@
 <head>
     <meta charset="utf-8">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="Css.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <!-- Add Bootstrap Themes Here (Just uncomment the ones below for example)-->
     <link rel="stylesheet" href="https://bootswatch.com/cerulean/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="https://bootswatch.com/cyborg/bootstrap.min.css"> -->
     <!-- <link rel="stylesheet" href="https://bootswatch.com/journal/bootstrap.min.css"> -->
-    <!--https://developers.google.com/places/javascript/ Google Places API Key AIzaSyBYAuJ6CwOk6hEY8g-JS_1lVLmnqO7wXLU -->
-    <title>Hiking Group Project 1</title>
+    <!--https://developers.google.com/places/javascript/ Google Places API Key -->AIzaSyBYAuJ6CwOk6hEY8g-JS_1lVLmnqO7wXLU -->
+    <!-- https://developers.google.com/maps/documentation/javascript/Google Maps API Key -->AIzaSyDAz1DNTz767LegodvAM1oRvckETLLGr-Q -->
+    <title>Lets find a Surf Location</title>
 </head>
 
 <body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-3">Lets Go Surfing</h1>
+            <p>Text Paragraph</p>
+        </div>
+    </div>
+    <!-- adding Rows -->
+    <div class="panel panel-default">
+        <div class="panel-heading">About</div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+                <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+                <!-- Add the extra clearfix for only the required viewport -->
+                <div class="clearfix visible-xs-block"></div>
+                <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+                <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+            </div>
+            Panel content
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Panel title</h3>
+        </div>
+        <div class="panel-body">
+            Panel content will have a button for "use my location" then we will need a dive ID for calling the Map tool.
+        </div>
+        <a class="btn btn-default" href="#" role="button">Link</a>
+        <button class="btn btn-default" type="submit">Button</button>
+        <input class="btn btn-default" type="button" value="Input">
+        <input class="btn btn-default" type="submit" value="Submit">
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+        <!-- Add the extra clearfix for only the required viewport -->
+        <div class="clearfix visible-xs-block"></div>
+        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+    </div>
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Dropdown
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+        </ul>
+    </div>
 </body>
 
 </html>
