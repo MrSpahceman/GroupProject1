@@ -16,17 +16,18 @@
         url: queryURL,
         method: "GET"
       })
-      console.log("look, I did something")
 
       // After the data from the AJAX request comes back
       .done(function(response) {
+      	console.log(response)
 
-        // Saving the image_original_url property
-        var county = response.data.image_original_url;
+        // Saving the image_original_url property NOTE this does not work. I got this line from the giphy example from class but need to figure out how to change it for google maps
+
+        //var county = response.data.image_original_url;
 
         // Creating and storing an paragraph tag to display the county name
-        var countyP = $("<p>");
+        //var countyP = $("<p>");
 
-        // Prepending the countyP to the p NOTE we need to match this id name up with what we really decide we want in the HTML. Right now it's place holder
-        $("#county-id").prepend(countyP);
+        // Prepending the countyP to the p 
+        //$("#county").prepend(countyP);
       });
