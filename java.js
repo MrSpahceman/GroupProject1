@@ -59,6 +59,7 @@ navigator.geolocation.getCurrentPosition(function(position) {
                     //console.log(response[0].spot_name);
                     for (i = 0; i < response.length; i++) {
                         var spotNames = (response[i].spot_name);
+                        console.log(spotNames);
                     }
                 });
             } else {
@@ -69,13 +70,3 @@ navigator.geolocation.getCurrentPosition(function(position) {
 
 
 
-
-// Saving the image_original_url property NOTE this does not work. I got this line from the giphy example from class but need to figure out how to change it for google maps
-
-//var county = response.data.image_original_url;
-
-// Creating and storing an paragraph tag to display the county name
-//var countyP = $("<p>");
-
-// Prepending the countyP to the p 
-//$("#county").prepend(countyP);
