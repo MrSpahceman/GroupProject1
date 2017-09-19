@@ -26,16 +26,25 @@
       // After the data from the AJAX request comes back
       .done(function(response) {
 
-      	//var results = response.results;
+      	var results = response.results;
       	//console.log(response);
 
-      	//for (i = 0; i < results.length; i++) { 
-    		//if (results[i].address_components[i].types == "administrative_area_level_2");
-    		//console.log(results[i]);
-      	console.log(response.results[5].address_components[0].long_name);
-      //};
+      	for (i = 0; i < results.length; i++) { 
+    		if ((results[i].types.indexOf("administrative_area_level_2")) !== -1){
+
+    		console.log(results[i].types);
+    		var county = (results[i].address_components[0].long_name);
+    		console.log(county);
+      	}
+      	};
       });
-      });
+    });
+
+//console.log(response.results[5].address_components[0].long_name);
+
+      	//var county = {
+      		//(response.results[5].address_components[0].long_name);
+      	//}
 
 
 
