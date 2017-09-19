@@ -8,6 +8,8 @@
     	$(document).ready();
     	console.log("I'm ready")
 
+    	var county;
+
 	navigator.geolocation.getCurrentPosition(function(position) {
 		  var lat = position.coords.latitude;
 		  var long = position.coords.longitude;
@@ -33,11 +35,26 @@
     		if ((results[i].types.indexOf("administrative_area_level_2")) !== -1){
 
     		console.log(results[i].types);
-    		var county = (results[i].address_components[0].long_name);
-    		console.log(county);
+    		county = (results[i].address_components[0].long_name);
+    		//console.log(county);
+    		console.log("Ready");
+        county = county.replace(/\sCounty/g, "");
+        county = county.replace(/\s/g, "-");
+        county = county.toLowerCase();
+    		var queryURL = "https://cors.io/?http://api.spitcast.com/api/county/spots/" +county
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).done(function(response) {
+            response = JSON.parse(response);
+
+            console.log(response[0].spot_name);
+        });
       	}
       	};
       });
+      console.log(county);
+   
     });
 
 //console.log(response.results[5].address_components[0].long_name);
