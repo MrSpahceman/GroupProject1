@@ -1,4 +1,4 @@
-//NOTES for reference: Goolge maps API key: AIzaSyBdFTld35JjmFfdeo1NWmjQMFgzTmC-GNs
+//NOTES for reference: Goolge maps API key: AIzaSyBDvAwRHZIzy1VI4eUADeiPPcC76USV94Q
 
 
 
@@ -9,7 +9,7 @@
     	console.log("I'm ready")
 
       // Storing our google API URL for refence to use
-      var queryURL = "https://maps.googleapis.com/maps/api/geocode/json?place_id=ChIJd8BlQ2BZwokRAFUEcm_qrcA&key=AIzaSyBdFTld35JjmFfdeo1NWmjQMFgzTmC-GNs";
+      var queryURL = "https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=AIzaSyBDvAwRHZIzy1VI4eUADeiPPcC76USV94Q";
 
       // Perfoming an AJAX GET request to our queryURL
       $.ajax({
